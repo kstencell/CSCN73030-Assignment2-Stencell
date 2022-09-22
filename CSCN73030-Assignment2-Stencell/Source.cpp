@@ -34,6 +34,10 @@ int main(void) {
 
 		// add to vector of students
 		students.push_back(newStudent);
+
+#ifdef _DEBUG
+		cout << newStudent.firstName << ", " << newStudent.lastName << endl;
+#endif
 	}
 
 	return 0;
